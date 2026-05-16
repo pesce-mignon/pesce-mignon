@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="..">Pesce Mignon</a></h1>
-        <p class="subtitle"><span class="en-text">personal experiences & recipes</span><span class="fr-text">expériences personnelles & recettes</span></p>
-    </header>
+    <div data-include="../includes/header.html"></div>
     
     <main>
         <article class="content">
@@ -63,17 +60,13 @@
             <h3><span class="en-text">Tricks</span><span class="fr-text">Astuces</span></h3>
             <p><strong><span class="en-text">The disadvantage of non-fried recipes</span><span class="fr-text">L'inconvénient des recettes sans friture</span></strong>, <span class="en-text">is that they have a drier result. So eat the fritters as soon as they come out of the oven, otherwise they will dry out as they cool.</span><span class="fr-text">c'est qu'elles ont un rendu plus sec. Du coup mangez les accras dès la sortie du four, sinon ils vont sécher en refroidissant.</span></p>
             
-            <p class="tags"><a href="/recipes/">#recipe</a> <a href="/tags/baby-friendly/">#baby-friendly</a></p>
+            <p class="tags"><a href="../recipes/">#recipe</a> <a href="../tags/baby-friendly/">#baby-friendly</a></p>
         </article>
     </main>
     
-    <footer>
-        <p>© <span id="year"></span> pesce-mignon</p>
-    </footer>
+    <div data-include="../includes/footer.html"></div>
     
     <script src="../js/lang.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="../js/includes.js"></script>
 </body>
 </html>

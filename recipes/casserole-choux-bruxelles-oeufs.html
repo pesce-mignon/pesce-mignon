@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="..">Pesce Mignon</a></h1>
-        <p class="subtitle"><span class="en-text">personal experiences & recipes</span><span class="fr-text">expériences personnelles & recettes</span></p>
-    </header>
+    <div data-include="../includes/header.html"></div>
     
     <main>
         <article class="content">
@@ -52,17 +49,13 @@
                 <li><span class="en-text">Form four small cavities in the Brussels sprouts preparation, then crack the eggs into them. Continue cooking in the oven for 10-12 minutes, until the egg whites are set but the yolks are still runny.</span><span class="fr-text">Former quatre petites cavités dans la préparation aux choux de Bruxelles, puis y casser les oeufs. Poursuivre la cuisson au four de 10 à 12 minutes, jusqu'à ce que le blanc des oeufs soit pris, mais que le jaune soit encore coulant.</span></li>
             </ol>
             
-            <p class="tags"><a href="/recipes/">#recipe</a></p>
+            <p class="tags"><a href="../recipes/">#recipe</a></p>
         </article>
     </main>
     
-    <footer>
-        <p>© <span id="year"></span> pesce-mignon</p>
-    </footer>
+    <div data-include="../includes/footer.html"></div>
     
     <script src="../js/lang.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="../js/includes.js"></script>
 </body>
 </html>

@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="..">Pesce Mignon</a></h1>
-        <p class="subtitle"><span class="en-text">personal experiences & recipes</span><span class="fr-text">expériences personnelles & recettes</span></p>
-    </header>
+    <div data-include="../includes/header.html"></div>
     
     <main>
         <article class="content">
@@ -23,37 +20,33 @@
             
             <h3><span class="en-text">Ingredients</span><span class="fr-text">Ingrédients</span></h3>
             <ul>
-                <li>mushroom</li>
-                <li>butter</li>
-                <li>oinions</li>
-                <li>parsley</li>
-                <li>thyme</li>
-                <li>garlic</li>
-                <li>white wine (optional)</li>
+                <li><span class="en-text">mushroom</span><span class="fr-text">champignons</span></li>
+                <li><span class="en-text">butter</span><span class="fr-text">beurre</span></li>
+                <li><span class="en-text">onion</span><span class="fr-text">oignon</span></li>
+                <li><span class="en-text">parsley</span><span class="fr-text">persil</span></li>
+                <li><span class="en-text">thyme</span><span class="fr-text">thym</span></li>
+                <li><span class="en-text">garlic</span><span class="fr-text">ail</span></li>
+                <li><span class="en-text">white wine</span><span class="fr-text">vin blanc</span> (<span class="en-text">optional</span><span class="fr-text">optionnel</span>)</li>
             </ul>
             
             <h3><span class="en-text">Steps</span><span class="fr-text">Étapes</span></h3>
             <ol>
                 <li><span class="en-text">Melt the butter in the pan</span><span class="fr-text">Faire fondre le beurre dans la poêle</span></li>
-                <li><span class="en-text">Add oinions</span><span class="fr-text">Ajouter les oignons</span></li>
+                <li><span class="en-text">Add onion</span><span class="fr-text">Ajouter les oignons</span></li>
                 <li><span class="en-text">Add mushrooms and stir</span><span class="fr-text">Ajouter les champignons et remuer</span></li>
-                <li><span class="en-text">Add white wine to deglase</span><span class="fr-text">Ajouter du vin blanc pour déglacer</span> (optional)</li>
+                <li><span class="en-text">Add white wine to deglase</span><span class="fr-text">Ajouter du vin blanc pour déglacer</span> (<span class="en-text">optional</span><span class="fr-text">optionnel</span>)</li>
                 <li><span class="en-text">Add thyme and parsley</span><span class="fr-text">Ajouter le thym et le persil</span></li>
                 <li><span class="en-text">Add the garlic</span><span class="fr-text">Ajouter l'ail</span></li>
                 <li><span class="en-text">Finish with pepper and salt</span><span class="fr-text">Terminer avec poivre et sel</span></li>
             </ol>
             
-            <p class="tags"><a href="/recipes/">#recipe</a></p>
+            <p class="tags"><a href="../recipes/">#recipe</a></p>
         </article>
     </main>
     
-    <footer>
-        <p>© <span id="year"></span> pesce-mignon</p>
-    </footer>
+    <div data-include="../includes/footer.html"></div>
     
     <script src="../js/lang.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="../js/includes.js"></script>
 </body>
 </html>

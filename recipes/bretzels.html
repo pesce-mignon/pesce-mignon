@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="..">Pesce Mignon</a></h1>
-        <p class="subtitle"><span class="en-text">personal experiences & recipes</span><span class="fr-text">expériences personnelles & recettes</span></p>
-    </header>
+    <div data-include="../includes/header.html"></div>
     
     <main>
         <article class="content">
@@ -79,17 +76,13 @@
                 <img src="../assets/pliage_bretzels.png" alt="Pliage des bretzels">
             </figure>
             
-            <p class="tags"><a href="/recipes/">#recipe</a> <a href="/tags/alsacian/">#alsacian</a></p>
+            <p class="tags"><a href="../recipes/">#recipe</a> <a href="../tags/alsacian/">#alsacian</a></p>
         </article>
     </main>
     
-    <footer>
-        <p>© <span id="year"></span> pesce-mignon</p>
-    </footer>
+    <div data-include="../includes/footer.html"></div>
     
     <script src="../js/lang.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="../js/includes.js"></script>
 </body>
 </html>
