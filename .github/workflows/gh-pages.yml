@@ -2,8 +2,8 @@ name: GitHub Pages
 
 on:
   push:
-    branches:
-      - main  # Set a branch name to trigger deployment
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 permissions:
